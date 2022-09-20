@@ -1,0 +1,20 @@
+/* Toda etiqueta de parrafo que este cerca a un h2 */
+/* COmbinador hermano o Adjacent Siblings */
+/* h2 + p{
+  color: red;
+} */
+/* Aplica estilos como hermanos generales osea que la etiqueta este superior a esa etiqueta */
+/* h2 ~ p{
+  color:red;
+} */
+/* la etiqueta parrafo que sea una etiqueta directa/hijo de la etiqueta div */
+div > p{
+  color:red;
+}
+/* A todas las etiquetas parrafo que esten dentro de un div tomaran estas propiedades */
+div p{
+  color: blue;
+}
+
+
+

@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+p,div,span,li{
+  font-size: 1.6rem;
+}
+.block-element{
+  background-color: green;
+  margin: 1rem;
+  padding: 2rem;
+}
+.nav{
+  background-color: peachpuff;
+  padding: 2rem;
+  list-style: none;
+  text-align: center;
+}
+.nav li{
+  display: inline-block;
+  font-size: 2rem;
+  margin: 1rem 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

@@ -1,0 +1,14 @@
+/* Elemento */
+p {
+  color: blue;
+  font-size: 30px;
+}
+/* Clase */
+.parrafo{
+  color: red;
+}
+
+/* Id */
+#parrafo{
+  color: blueviolet;
+}

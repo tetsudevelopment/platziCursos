@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Frutas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <main>
+    <!-- <p>Desafio</p>
+    <h1>Soy la lista del super!</h1>
+    <ul> 
+      <li>Frutas</li>
+      <ol>
+        <li>
+          <a href="https://www.google.com/search?q=receta+con+manzana&oq=receta+con+manzana&aqs=chrome..69i57.6918j0j1&sourceid=chrome&ie=UTF-8" target="_blank">Manzana</a>
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/search?q=receta+con+platano&sxsrf=ALiCzsaofbfIi0Sm6BpxyEDVZEdBS-XdoQ%3A1661115764230&ei=dJ0CY9rdDenLwbkPisSRkAE&ved=0ahUKEwja57q46tj5AhXpZTABHQpiBBIQ4dUDCA4&uact=5&oq=receta+con+platano&gs_lcp=Cgdnd3Mtd2l6EAMyCggAEIAEEIcCEBQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIKCAAQgAQQhwIQFDoHCAAQRxCwAzoHCAAQsAMQQzoMCC4QyAMQsAMQQxgBOg0IABCABBCHAhCxAxAUSgQIQRgASgQIRhgAUJYFWOYLYPgRaAFwAXgAgAG7AYgB-geSAQMwLjeYAQCgAQHIAQvAAQHaAQQIARgI&sclient=gws-wiz" target="_blank">Platano</a>
+        </li>
+      </ol>
+    </ul>
+    <ul>
+      <li>Carnes</li>
+      <ol>
+        <li>
+          <a
+            href="https://www.google.com/search?q=receta+con+pollo&sxsrf=ALiCzsY5jYsrjsATczY_R9HwL8Al4nOzmw%3A1661115873567&ei=4Z0CY5GbIoHNwbkP8vizsAg&ved=0ahUKEwjRj8zs6tj5AhWBZjABHXL8DIYQ4dUDCA4&uact=5&oq=receta+con+pollo&gs_lcp=Cgdnd3Mtd2l6EAMyDQgAEIAEEIcCELEDEBQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAE6DwguENQCEMgDELADEEMYAjoECCMQJzoKCAAQgAQQhwIQFDoECAAQQzoICAAQgAQQsQNKBAhBGABKBAhGGAFQ-gRY6wlgtwtoAXABeACAAZwBiAGfBZIBAzAuNZgBAKABAcgBEcABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz" target="_blank">Pollo</a>
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/search?q=receta+con+carne+molida&sxsrf=ALiCzsZGvcaHehB4fY40aQHcjE5sGXs-vg%3A1661115888866&ei=8J0CY9zBNMjLkvQP54eq-AQ&oq=receta+con+carne+&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6DAguEMgDELADEEMYAToKCAAQgAQQhwIQFEoECEEYAEoECEYYAFChA1ifCWC_D2gBcAF4AIAB2QGIAYsHkgEFMC41LjGYAQCgAQHIAQ3AAQHaAQQIARgI&sclient=gws-wiz" target="_blank">Carne molida</a>
+        </li>
+      </ol>
+    </ul>
+    <ul>
+      <li>Verduras</li>
+      <ol>
+        <li>
+          <a
+            href="https://www.google.com/search?q=receta+con+limon&sxsrf=ALiCzsbDwWWYOlbrjh5MwsV5CWy2pBHPKg%3A1661115901190&ei=_Z0CY9yWC636wbkPrYq60A4&ved=0ahUKEwicieL56tj5AhUtfTABHS2FDuoQ4dUDCA4&uact=5&oq=receta+con+limon&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyDAguEMgDELADEEMYATIMCC4QyAMQsAMQQxgBMgwILhDIAxCwAxBDGAEyDAguEMgDELADEEMYATIMCC4QyAMQsAMQQxgBMgwILhDIAxCwAxBDGAFKBAhBGABKBAhGGAFQngVY_g1gjhFoAXABeACAAQCIAQCSAQCYAQCgAQHIARLAAQHaAQYIARABGAg&sclient=gws-wiz" target="_blank">Limón</a>
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/search?q=receta+con+zanahoria&sxsrf=ALiCzsZvTMQk-UZtKpxen_Y3kFo0P7e5mA%3A1661115912331&ei=CJ4CY__lE7aHwbkPmrqryAk&oq=receta+con+za&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIKCAAQgAQQhwIQFDoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFCJA1j0BWC8DmgBcAF4AIAB1QKIAcUEkgEFMi0xLjGYAQCgAQHIAQrAAQE&sclient=gws-wiz" target="_blank">Zanahoria</a>
+        </li>
+      </ol>
+    </ul>
+    <p>Creado con amor</p> -->
+    <h4>Optimizando codigo</h4>
+    <ul>
+      <li>Frutas</li>
+        <ol>
+          <li>
+            <a
+              href="https://www.google.com/search?q=receta+con+manzana&oq=receta+con+manzana&aqs=chrome..69i57.6918j0j1&sourceid=chrome&ie=UTF-8" target="_blank">Manzana</a>
+              <figure>
+                <img src="manzana.jpg" alt="manzana">
+              </figure>
+            </li>
+          <li>
+            <a
+              href="https://www.google.com/search?q=receta+con+platano&sxsrf=ALiCzsaofbfIi0Sm6BpxyEDVZEdBS-XdoQ%3A1661115764230&ei=dJ0CY9rdDenLwbkPisSRkAE&ved=0ahUKEwja57q46tj5AhXpZTABHQpiBBIQ4dUDCA4&uact=5&oq=receta+con+platano&gs_lcp=Cgdnd3Mtd2l6EAMyCggAEIAEEIcCEBQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIKCAAQgAQQhwIQFDoHCAAQRxCwAzoHCAAQsAMQQzoMCC4QyAMQsAMQQxgBOg0IABCABBCHAhCxAxAUSgQIQRgASgQIRhgAUJYFWOYLYPgRaAFwAXgAgAG7AYgB-geSAQMwLjeYAQCgAQHIAQvAAQHaAQQIARgI&sclient=gws-wiz" target="_blank">Platano</a>
+              <figure>
+                <img src="platano.jpg" alt="Platano">
+              </figure>
+          </li>
+        </ol>
+      <li>Carnes</li>
+        <ol>
+          <li>
+            <a
+              href="https://www.google.com/search?q=receta+con+pollo&sxsrf=ALiCzsY5jYsrjsATczY_R9HwL8Al4nOzmw%3A1661115873567&ei=4Z0CY5GbIoHNwbkP8vizsAg&ved=0ahUKEwjRj8zs6tj5AhWBZjABHXL8DIYQ4dUDCA4&uact=5&oq=receta+con+pollo&gs_lcp=Cgdnd3Mtd2l6EAMyDQgAEIAEEIcCELEDEBQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAE6DwguENQCEMgDELADEEMYAjoECCMQJzoKCAAQgAQQhwIQFDoECAAQQzoICAAQgAQQsQNKBAhBGABKBAhGGAFQ-gRY6wlgtwtoAXABeACAAZwBiAGfBZIBAzAuNZgBAKABAcgBEcABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz" target="_blank">Pollo</a>
+              <figure>
+                <img src="pollo.jpg" alt="Pollo">
+              </figure>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/search?q=receta+con+carne+molida&sxsrf=ALiCzsZGvcaHehB4fY40aQHcjE5sGXs-vg%3A1661115888866&ei=8J0CY9zBNMjLkvQP54eq-AQ&oq=receta+con+carne+&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6DAguEMgDELADEEMYAToKCAAQgAQQhwIQFEoECEEYAEoECEYYAFChA1ifCWC_D2gBcAF4AIAB2QGIAYsHkgEFMC41LjGYAQCgAQHIAQ3AAQHaAQQIARgI&sclient=gws-wiz" target="_blank">Carne
+              molida</a>
+              <figure>
+                <img src="Carne-molida.jpg" alt="Carne molida">
+              </figure>
+          </li>
+        </ol>
+      <li>Verduras</li>
+        <ol>
+          <li>
+            <a
+              href="https://www.google.com/search?q=receta+con+limon&sxsrf=ALiCzsbDwWWYOlbrjh5MwsV5CWy2pBHPKg%3A1661115901190&ei=_Z0CY9yWC636wbkPrYq60A4&ved=0ahUKEwicieL56tj5AhUtfTABHS2FDuoQ4dUDCA4&uact=5&oq=receta+con+limon&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyDAguEMgDELADEEMYATIMCC4QyAMQsAMQQxgBMgwILhDIAxCwAxBDGAEyDAguEMgDELADEEMYATIMCC4QyAMQsAMQQxgBMgwILhDIAxCwAxBDGAFKBAhBGABKBAhGGAFQngVY_g1gjhFoAXABeACAAQCIAQCSAQCYAQCgAQHIARLAAQHaAQYIARABGAg&sclient=gws-wiz" target="_blank">Limón</a>
+              <figure>
+                <img src="limon.jpg" alt="Limon">
+              </figure>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/search?q=receta+con+zanahoria&sxsrf=ALiCzsZvTMQk-UZtKpxen_Y3kFo0P7e5mA%3A1661115912331&ei=CJ4CY__lE7aHwbkPmrqryAk&oq=receta+con+za&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIKCAAQgAQQhwIQFDoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFCJA1j0BWC8DmgBcAF4AIAB1QKIAcUEkgEFMi0xLjGYAQCgAQHIAQrAAQE&sclient=gws-wiz" target="_blank">Zanahoria</a>
+              <figure>
+                <img src="zanahoria.jpg" alt="Zanahoria">
+              </figure>
+          </li>
+        </ol>
+    </ul>
+    <p>Optimizado con amor :3</p>
+  </main>
+
+
+
+</body>
+</html>

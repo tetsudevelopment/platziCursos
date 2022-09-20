@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select</title>
+</head>
+<body>
+  <main>
+    <!-- Es buena opcion pero no es la mejor practica -->
+    <!-- <select name="courses" id="">
+      <option value="JavaScript">JavaScript</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS3">CSS3</option>
+      <option value="Web standards">Web standards</option>
+    </select> -->
+
+    <!-- Buenas practicas -->
+    <input list="courses">
+    <datalist id="courses">
+      <option value="JavaScript"></option>
+      <option value="HTML"></option>
+      <option value="CSS3"></option>
+      <option value="Web standards"></option>
+    </datalist>
+  </main>
+
+
+</body>
+</html>

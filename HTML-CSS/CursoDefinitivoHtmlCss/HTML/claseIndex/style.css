@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  background-color: burlywood;
+}
+h4{
+  color: chocolate;
+  font-size: 50px;
+  text-align: center;
+}
+li{
+  list-style: none;
+  font-size: 30px; 
+  color: cadetblue;
+}
+a{
+  text-decoration: none;
+  color: violet;
+  font-size: 20px;
+}
+img{
+  width: 80px;
+  border-radius: 50px;
+}
+p{
+  font-size: 30px;
+  color: red;
+}

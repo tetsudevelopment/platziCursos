@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+  <!-- La forma en la que no se debe crear un formulario -->
+  <div>
+    <input type="text" >
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+  </div>
+  <br>
+  <!-- Forma correcta de hacer un formulario -->
+  <form action="">
+    <!-- Input tipo texto -->
+    <label for="nombre">
+      <span>¿Cual es tu nombre?</span>
+      <input type="text" id="nombre" placeholder="Brayan" />
+    </label>
+    <!--input Tipo date -->
+    <label for="inicio-platzi">
+      <span>¿Qué día comenzaste en platzi?</span>
+      <input type="date" id="inicio-platzi"/>
+    </label>
+    <!-- Input type time -->
+    <label for="horario">
+      <span>¿En que horario estudias?</span>
+      <input type="time" id="horario" />
+    </label>
+  </form>
+
+</body>
+</html>
